@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+     <script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+</head>
+<body>
+
+    <!-- Check if user is logged in -->
+    <script>
+        // Check if the user is logged in
+        if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+            // Redirect to login page if the user is not logged in
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <!-- Page content (questions, etc.) -->
+    <div class="search-container">
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="မေးခွန်းရှာရန်..." onkeyup="searchFunction()">
+        </div>
+    </div>
+
+    <div class="search-results-container" id="searchResultsContainer"></div>
+
+    <div class="thumbnail-grid" id="thumbnailGrid">
+        <!-- Dynamically generated questions go here -->
+    </div>
+
+    <div class="pagination">
+        <button class="prev-btn" onclick="prevPage()"><<</button>
+        <button class="current-btn" id="currentPage">1</button>
+        <button class="next-btn" onclick="nextPage()">>></button>
+    </div>
+
+    <script src="script.js"></script>
+    <p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </p>
+    <footer class="footer">
+        <p>&copy; 2025 <a href="https://epshero.com" target="_blank">epshero.com</a></p>
+    </footer>
+
+</body>
+</html>
+
+

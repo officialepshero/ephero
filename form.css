@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: yellow;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.question {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+textarea {  /* Style for textareas */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allow vertical resizing */
+  font-family: sans-serif; /* Inherit font from body */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .question {
+        width: 95%;
+    }
+
+    #container {
+        padding: 10px;
+    }
+}
+
+/* styles.css */
+/* ... (same as before) */
+
+img {
+  max-width: 100px; /* Or whatever size you want */
+  height: auto;
+}

@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.exit-icon {
+    position: fixed;       
+    top: 15px;            
+    left: 15px;            
+    width: 40px;           
+    height: 40px;          
+    border-radius: 50%;   
+    background-color: #fff; 
+    display: flex;         
+    justify-content: center;
+    align-items: center;   
+    font-size: 20px;       
+    color: #333;          
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.social-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.social-box span {
+    margin-right: 10px; 
+}
+
+
+.material-icons {
+    font-size: 30px;
+    animation: rotate 4s infinite linear; 
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* YouTube */
+.youtube {
+    background-color: #FF0000;
+}
+
+.youtube:hover {
+    transform: scale(1.05);
+}
+
+/* Facebook */
+.facebook {
+    background-color: #1877F2; 
+}
+
+.facebook:hover {
+    transform: scale(1.05);
+}
+
+/* Messenger */
+.messenger {
+    background-color: #0084FF; 
+}
+
+.messenger:hover {
+    transform: scale(1.05);
+}
+
+/* Telegram */
+.telegram {
+    background-color: #0088CC; 
+}
+
+.telegram:hover {
+    transform: scale(1.05);
+}
+
+/* TikTok */
+.tiktok {
+    background-color: #000000;
+}
+
+.tiktok:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+}
+
+.footer a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}

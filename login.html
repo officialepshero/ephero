@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+</head>
+<body>
+     <!-- Exit Arrow Icon (link to go back) -->
+    <a href="index.html" class="exit-icon"><i class="fas fa-arrow-left"></i></a>
+    <div class="login-container">
+        <!-- Logo Image -->
+        <div class="logo-container">
+            <img src="logo.jpg" alt="EPS Hero Logo" class="logo">
+        </div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username"></label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                <i class="fas fa-eye" id="togglePassword"></i> <!-- Eye icon -->
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="mkp.js"></script>
+     <footer class="footer">
+        <p>&copy; 2025 <a href="https://epshero.com" target="_blank">epshero.com</a></p>
+    </footer>
+</body>
+</html>

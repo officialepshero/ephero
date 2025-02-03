@@ -1,0 +1,159 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.exit-icon {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(-40%);
+}
+
+/* Logo styling */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+/* Form elements styling */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(0%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit input:hover {
+    background-color: #166fe5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    transform: translateY(500%);
+}
+
+.footer a {
+    color: #2196f3; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}

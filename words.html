@@ -34,6 +34,40 @@
       margin-bottom: 10px;
     }
   </style>
+  <!DOCTYPE html>
+<script>
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable text selection (less reliable on mobile)
+  document.onselectstart = function() { return false; };
+
+  // Make content unselectable
+  document.body.style.userSelect = 'none';
+
+  // Prevent screen capture (Attempt to deter screen recording)
+  // These methods may have varying levels of effectiveness across browsers.
+  window.onbeforeunload = function() {
+    return "Leaving this page will result in data loss."; 
+  };
+
+  // Attempt to detect and prevent screen recording (May not be reliable)
+  if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+    navigator.mediaDevices.getDisplayMedia({ video: true }) 
+      .then(() => {
+        // If screen recording is allowed, you can display an alert or take action here
+        alert("Screen recording is not allowed on this page."); 
+      })
+      .catch(() => {
+        // If screen recording is blocked, continue as normal
+      });
+  }
+
+  // Additional measures to deter screen recording (less reliable):
+  // - Randomly change background color or content on user interaction
+  // - Detect and prevent screenshots using browser extensions or user scripts
+
+</script>
   <script language=JavaScript>
 <!--
 var message="Function Disabled!";

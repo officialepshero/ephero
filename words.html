@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Words</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: sienna; 
+    }
+
+    .container {
+      max-width: 90%; 
+      margin: 0 auto; 
+    }
+
+    .logo {
+      width: 100px; 
+      margin-bottom: 20px; 
+    }
+
+    .block {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+  <script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+</head>
+<body>
+  <div class="container">
+    <img src="header.jpg" alt="Logo" class="logo"> 
+
+    <div class="block">
+      <h3>반대말</h3>
+      <p>높다 ↔️ 낮다<br>
+ 빠르다 ↔️ 느리다<br>
+ 가볍다 ↔️ 무겁다<br>
+ 길다 ↔️ 짧다<br>
+ 춥다 ↔️ 덥다<br>
+ 싸다 ↔️ 비싸다<br>
+ 시작하다 ↔️ 끝나다<br>
+ 출근하다 ↔️ 퇴근하다<br>
+ 고장 나다 ↔️ 수리하다<br>
+안전하다 ↔️ 위험하다<br>
+ 성공하다 ↔️ 실패하다<br>
+ 쉬다 ↔️ 일하다<br>
+ 열다 ↔️ 닫다<br></p>
+    </div>
+
+    <div class="block">
+      <h3>비슷한말</h3>
+      <p>일하다 = 근무하다<br>
+ 배우다 = 공부하다<br>
+ 걷다 = 이동하다<br>
+ 가르치다 = 교육하다<br>
+ 어렵다 = 힘들다<br>
+ 도와주다 = 돕다<br>
+공장 = 작업장<br>
+ 직원 = 노동자<br>
+ 월급 = 급여<br>
+ 기계 = 장비<br>
+병원 = 의원<br>
+ 밥 = 식사<br>
+ 집 = 가정<br>
+ 옷 = 의류<br></p>
+    </div>
+  </div>
+
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable text selection
+    document.onselectstart = function() { return false; };
+
+    // Prevent screen capture (Attempt to deter screen recording)
+    // These methods may have varying levels of effectiveness across browsers.
+    window.onbeforeunload = function() {
+      return "Leaving this page will result in data loss."; 
+    };
+
+    // Attempt to detect and prevent screen recording (May not be reliable)
+    if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+      navigator.mediaDevices.getDisplayMedia({ video: true }) 
+        .then(() => {
+          // If screen recording is allowed, you can display an alert or take action here
+          alert("Screen recording is not allowed on this page."); 
+        })
+        .catch(() => {
+          // If screen recording is blocked, continue as normal
+        });
+    }
+  </script>
+
+</body>
+</html>

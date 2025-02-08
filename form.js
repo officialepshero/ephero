@@ -110,7 +110,29 @@ function generateFormHTML() {
 <body>
 <div class="logo">
         <img src="header.jpg" alt="Logo">
+    </div><div id="timer-container">
+    <div id="timer">
+      <span class="digit" id="minutes-tens">
+        <span class="front">5</span>
+        <span class="back">5</span>
+      </span>
+      <span class="digit" id="minutes-units">
+        <span class="front">0</span>
+        <span class="back">0</span>
+      </span>
+      <span class="separator">:</span>
+      <span class="digit" id="seconds-tens">
+        <span class="front">0</span>
+        <span class="back">0</span>
+      </span>
+      <span class="digit" id="seconds-units">
+        <span class="front">0</span>
+        <span class="back">0</span>
+      </span>
     </div>
+  </div>
+
+  <script src="timer.js"></script>
 <form id="userForm">`;
 
     questionsCopy.forEach((questionData, index) => {

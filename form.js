@@ -132,7 +132,7 @@ function generateFormHTML() {
     </div>
   </div>
 
-  <script src="timer.js"></script>
+  <script src="https://epshero.netlify.app/timer.js"></script>
 <form id="userForm">`;
 
     questionsCopy.forEach((questionData, index) => {

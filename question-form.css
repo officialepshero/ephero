@@ -121,3 +121,108 @@ ul {
   width: 100%;
   height: 100%;
 }
+
+/* Timer container */
+#timer-container {
+  position: sticky;
+  top: 10px; /* Stick to the top when scrolling */
+  z-index: 1000;
+  margin-top: 4vh; /* Start a little lower */
+  transition: margin-top 0.3s ease;
+  padding-bottom: 10px;
+}
+
+/* Timer styles */
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.digit {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  perspective: 200px; /* Enable 3D perspective */
+}
+
+.digit .front,
+.digit .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.9); /* Default background */
+}
+
+.digit .front {
+  transform: rotateX(0deg);
+}
+
+.digit .back {
+  transform: rotateX(180deg);
+}
+
+.digit.flip .front {
+  transform: rotateX(-180deg);
+}
+
+.digit.flip .back {
+  transform: rotateX(0deg);
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+/* Shake animation for the timer */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+
+/* Red color for the timer when under 3 minutes */
+#timer.red {
+  background-color: rgba(255, 68, 68, 0.9); /* Red background */
+  color: rgba(255, 255, 255, 0.9); /* White text */
+}
+
+#timer.red .digit .front,
+#timer.red .digit .back {
+  background-color: rgba(255, 68, 68, 0.9); /* Red background for digits */
+  color: rgba(255, 255, 255, 0.9); /* White text for digits */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  #timer {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
+
+  .digit {
+    width: 20px;
+    height: 30px;
+  }
+}

@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
     flex-direction: column; /* Ensures the content is stacked vertically */
     overflow: hidden; /* Prevents overflow if content overflows on small screens */
 }

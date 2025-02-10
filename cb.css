@@ -11,11 +11,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     flex-direction: column; /* Ensures the content is stacked vertically */
-    height: 100vh;
-    overflow: auto; /* Allow scrolling if the content overflows */
+    overflow: auto; /* Prevents overflow if content overflows on small screens */
 }
-
 /* Logo styling */
 .logo-container {
     margin-bottom: 20px;
@@ -36,7 +35,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Avoid content overflow inside the container */
 }
 
 .quiz-container {

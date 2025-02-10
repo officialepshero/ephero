@@ -76,3 +76,8 @@ restartBtn.addEventListener('click', () => {
 
 // Initialize the first photo
 updatePhoto();
+
+// Refresh the page every 1 minute (60000 milliseconds) and redirect to login.html
+setTimeout(function() {
+    window.location.href = 'cblogin.html';
+}, 1200000); // 60000 milliseconds = 1 minute

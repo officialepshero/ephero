@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Blind Test</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="cb.css">
+</head>
+<script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+<body>
+    <div class="logo-container">
+            <img src="header.jpg" alt="EPS Hero Logo" class="logo">
+        </div>
+    <div class="container">
+        <div class="quiz-container" id="quizContainer">
+            <div class="question">No. <span id="photoNumber">1</span></div>
+            <div class="photo-container">
+                <img id="photo" src="photo1.jpg" alt="Photo 1">
+            </div>
+            <div class="input-container">
+                <input type="text" id="numberInput" readonly>
+                <div class="keyboard">
+                    <button class="key" data-value="1">1</button>
+                    <button class="key" data-value="2">2</button>
+                    <button class="key" data-value="3">3</button>
+                    <button class="key" data-value="4">4</button>
+                    <button class="key" data-value="5">5</button>
+                    <button class="key" data-value="6">6</button>
+                    <button class="key" data-value="7">7</button>
+                    <button class="key" data-value="8">8</button>
+                    <button class="key" data-value="9">9</button>
+                    <button class="key" data-value="0">0</button>
+                    <button class="key delete" id="deleteBtn"><i class="material-icons" style="font-size:20px;color:black">backspace</i></button>
+                </div>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <h2>Test Results</h2>
+            <div id="results"></div>
+            <button id="restartBtn">Restart Test</button>
+        </div>
+    </div>
+    <script src="https://epshero.netlify.app/cb.js"></script>
+</body>
+</html>

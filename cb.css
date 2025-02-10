@@ -1,0 +1,168 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Ensures the content is stacked vertically */
+    overflow: hidden; /* Prevents overflow if content overflows on small screens */
+}
+/* Logo styling */
+.logo-container {
+    margin-bottom: 20px;
+    padding-left: 75px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+/* Container for quiz */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container {
+    text-align: center;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.photo-container {
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.input-container {
+    text-align: center;
+}
+
+#numberInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.key {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.key.delete {
+    background-color: #dc3545;
+    grid-column: span 1; /* Ensure delete button takes one column */
+}
+
+/* Custom layout for the bottom row */
+.keyboard .key[data-value="0"] {
+    grid-column: 2; /* Place 0 in the middle column */
+}
+
+#nextBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+#nextBtn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.results-container {
+    text-align: center;
+}
+
+#results {
+    margin-bottom: 20px;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container,
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .keyboard {
+        grid-template-columns: repeat(3, 1fr); /* Maintain grid layout for small screens */
+    }
+
+    .key {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #nextBtn,
+    #restartBtn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Adjust image size for mobile screens */
+    .photo-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}

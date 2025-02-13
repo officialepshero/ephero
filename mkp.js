@@ -7,7 +7,8 @@ const users = [
     { username: 'naylin', password: 'naylin522025'},
     { username: 'Pyae Gyi', password: '150399'},
     { username: 'Eaint loon', password: '123456789'},
-    { username: 'WineAung', password: 'wine1994'} 
+    { username: 'WineAung', password: 'wine1994'},
+    { username: 'nay san', password: 'naysan2359'} 
 ];
 
 // Get the form elements

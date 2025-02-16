@@ -188,7 +188,7 @@ document.oncontextmenu=new Function("alert(message);return false")
 
   function checkAnswers() {
     let score = 0;
-    const totalPoints = 100;
+    const totalPoints = 50;
 
     questions.forEach((questionData, index) => {
       const selectedAnswer = document.querySelector(`input[name="q${index}"]:checked`);

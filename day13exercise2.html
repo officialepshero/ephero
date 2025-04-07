@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Day 13 Exercise 2</title>
+<link rel="stylesheet" href="question-form.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+<body>
+<div class="logo">
+        <img src="header.jpg" alt="Logo">
+    </div>
+
+<form id="userForm"><div class="question" id="question0">
+  <div class="video-container">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/qoW97Ukrcvc?si=VYjts7eAJJwr5DZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                </div>
+                    <h4>30.</h4><ul><li class="answer-container"><input type="radio" name="q0" value="1" id="q0a0">
+            <label for="q0a0"><span>커피 한잔 주세요.</span></li><li class="answer-container"><input type="radio" name="q0" value="2" id="q0a1">
+            <label for="q0a1"><span>깍아 주세요.</span></li><li class="answer-container"><input type="radio" name="q0" value="3" id="q0a2">
+            <label for="q0a2"><span>좀 비싸네요.</span></li><li class="answer-container"><input type="radio" name="q0" value="4" id="q0a3">
+            <label for="q0a3"><span>오만원에 해 주세요.</span></li></ul></div><div class="question" id="question1">
+                    <h4>31.</h4><ul><li class="answer-container"><input type="radio" name="q1" value="1" id="q1a0">
+            <label for="q1a0"><span>이박으로 했어요.</span></li><li class="answer-container"><input type="radio" name="q1" value="2" id="q1a1">
+            <label for="q1a1"><span>삼일 전에 했어요.</span></li><li class="answer-container"><input type="radio" name="q1" value="3" id="q1a2">
+            <label for="q1a2"><span>비행기 표는 미리 사 뒀어요.</span></li><li class="answer-container"><input type="radio" name="q1" value="4" id="q1a3">
+            <label for="q1a3"><span>이미 예약 했어요.</span></li></ul></div><div class="question" id="question2">
+                    <h4>32.</h4><ul><li class="answer-container"><input type="radio" name="q2" value="1" id="q2a0">
+            <label for="q2a0"><span>외국인력센터에 한번 가 보세요.</span></li><li class="answer-container"><input type="radio" name="q2" value="2" id="q2a1">
+            <label for="q2a1"><span>먼저 이용자 카드를 만드세요.</span></li><li class="answer-container"><input type="radio" name="q2" value="3" id="q2a2">
+            <label for="q2a2"><span>외국인 등복종을 가지고 가세요.</span></li><li class="answer-container"><input type="radio" name="q2" value="4" id="q2a3">
+            <label for="q2a3"><span>네, 신청서를 쓰시면 돼요.</span></li></ul></div><div class="question" id="question3">
+                    <h4>33.</h4><ul><li class="answer-container"><input type="radio" name="q3" value="1" id="q3a0">
+            <label for="q3a0"><span>일단은 그냥 두세요.</span></li><li class="answer-container"><input type="radio" name="q3" value="2" id="q3a1">
+            <label for="q3a1"><span>저 쪽으로 옮기고 있어요.</span></li><li class="answer-container"><input type="radio" name="q3" value="3" id="q3a2">
+            <label for="q3a2"><span>여기로 가져오려고 해요.</span></li><li class="answer-container"><input type="radio" name="q3" value="4" id="q3a3">
+            <label for="q3a3"><span>제가 저쪽으로 다 옮겨 놓았어요.</span></li></ul></div><div class="question" id="question4">
+                    <h4>34.</h4><ul><li class="answer-container"><input type="radio" name="q4" value="1" id="q4a0">
+            <label for="q4a0"><span>옷과 가방을 제출하세요.</span></li><li class="answer-container"><input type="radio" name="q4" value="2" id="q4a1">
+            <label for="q4a1"><span>사업자 중의서를 첨부하세요.</span></li><li class="answer-container"><input type="radio" name="q4" value="3" id="q4a2">
+            <label for="q4a2"><span>일시 출국 전에 허가를 받으세요.</span></li><li class="answer-container"><input type="radio" name="q4" value="4" id="q4a3">
+            <label for="q4a3"><span>출입국 관리소에 직접 제출하세요.</span></li></ul></div><div class="question" id="question5">
+                    <h4>35.</h4><ul><li class="answer-container"><input type="radio" name="q5" value="1" id="q5a0">
+            <label for="q5a0"><span>오늘은 물량이 많아서 안돼요.</span></li><li class="answer-container"><input type="radio" name="q5" value="2" id="q5a1">
+            <label for="q5a1"><span>오늘은 다들 늦게 퇴근했어요.</span></li><li class="answer-container"><input type="radio" name="q5" value="3" id="q5a2">
+            <label for="q5a2"><span>반장님은 오늘 회식에 빠지셨어요.</span></li><li class="answer-container"><input type="radio" name="q5" value="4" id="q5a3">
+            <label for="q5a3"><span>감사합니다. 우리 다 같이 건배합시다.</span></li></ul></div><button type="button" onclick="checkAnswers()" class="submit-button">Submit</button>
+  <div id="result"></div>
+  </form>
+
+  <script>
+  const questions = [{"question":"30.","answers":["커피 한잔 주세요.","깍아 주세요.","좀 비싸네요.","오만원에 해 주세요."],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]},{"question":"31.","answers":["이박으로 했어요.","삼일 전에 했어요.","비행기 표는 미리 사 뒀어요.","이미 예약 했어요."],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]},{"question":"32.","answers":["외국인력센터에 한번 가 보세요.","먼저 이용자 카드를 만드세요.","외국인 등복종을 가지고 가세요.","네, 신청서를 쓰시면 돼요."],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]},{"question":"33.","answers":["일단은 그냥 두세요.","저 쪽으로 옮기고 있어요.","여기로 가져오려고 해요.","제가 저쪽으로 다 옮겨 놓았어요."],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]},{"question":"34.","answers":["옷과 가방을 제출하세요.","사업자 중의서를 첨부하세요.","일시 출국 전에 허가를 받으세요.","출입국 관리소에 직접 제출하세요."],"correctAnswer":"2","questionImage":null,"answerImages":[null,null,null,null]},{"question":"35.","answers":["오늘은 물량이 많아서 안돼요.","오늘은 다들 늦게 퇴근했어요.","반장님은 오늘 회식에 빠지셨어요.","감사합니다. 우리 다 같이 건배합시다."],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]}]; // Use the copied array
+
+  function checkAnswers() {
+    let score = 0;
+    const totalPoints = 6;
+
+    questions.forEach((questionData, index) => {
+      const selectedAnswer = document.querySelector(`input[name="q${index}"]:checked`);
+      const questionDiv = document.getElementById(`question${index}`);
+
+      if (selectedAnswer) {
+        const userAnswer = selectedAnswer.value;
+
+        if (userAnswer === questionData.correctAnswer) {
+          score += 1;
+        } else {
+          // If wrong, display the correct answer below the question
+          const correctAnswerText = document.createElement('p');
+          correctAnswerText.style.color = 'red';
+          correctAnswerText.textContent = `Correct answer: ${questionData.answers[questionData.correctAnswer - 1]}`;
+          questionDiv.appendChild(correctAnswerText);
+        }
+      }
+    });
+
+    document.getElementById('result').textContent = `Your score: ${score} / ${totalPoints}`;
+  }
+  </script>
+    <p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+</body>
+</html>

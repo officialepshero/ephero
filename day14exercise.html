@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Day 14 Exercise</title>
+<link rel="stylesheet" href="question-form.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <script language=JavaScript>
+<!--
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// ->
+</script>
+<body>
+<div class="logo">
+        <img src="header.jpg" alt="Logo">
+    </div>
+  
+<form id="userForm"><div class="question" id="question0">
+  <div class="video-container">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6OyEIvGaUU4?si=kCPz7ZmRAx1A3udm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                    <h4>들은 내용과 같은 것을 고르십시오.</h4><ul><li class="answer-container"><input type="radio" name="q0" value="1" id="q0a0">
+            <label for="q0a0"><span>여자는 신청서를 썼습니다.</span></li><li class="answer-container"><input type="radio" name="q0" value="2" id="q0a1">
+            <label for="q0a1"><span>여자는 수영장에서 일합니다.</span></li><li class="answer-container"><input type="radio" name="q0" value="3" id="q0a2">
+            <label for="q0a2"><span>여자는 아침에 수영을 배울 겁니다.</span></li><li class="answer-container"><input type="radio" name="q0" value="4" id="q0a3">
+            <label for="q0a3"><span>여자는 회사에서 운동을 하려고 합니다.</span></li></ul></div><div class="question" id="question1">
+                    <h4>들은 내용과 같은 것을 고르십시요.</h4><ul><li class="answer-container"><input type="radio" name="q1" value="1" id="q1a0">
+            <label for="q1a0"><span>여자는 다음 주에 음악회에 갑니다.</span></li><li class="answer-container"><input type="radio" name="q1" value="2" id="q1a1">
+            <label for="q1a1"><span>남자는 아버지의 선물을 준비했습니다.</span></li><li class="answer-container"><input type="radio" name="q1" value="3" id="q1a2">
+            <label for="q1a2"><span>남자는 부모님과 음악회에 가고 싶어합니다.</span></li><li class="answer-container"><input type="radio" name="q1" value="4" id="q1a3">
+            <label for="q1a3"><span>여자는 인터넷으로 공연을 찾아보려고 합니다.</span></li></ul></div><div class="question" id="question2">
+                    <h4>들은 내용과 같은 것을 고르십시오.</h4><ul><li class="answer-container"><input type="radio" name="q2" value="1" id="q2a0">
+            <label for="q2a0"><span>남자는 지금 행사장에 있습니다.</span></li><li class="answer-container"><input type="radio" name="q2" value="2" id="q2a1">
+            <label for="q2a1"><span>남자는 물건을 사서 사무실로 오면 됩니다.</span></li><li class="answer-container"><input type="radio" name="q2" value="3" id="q2a2">
+            <label for="q2a2"><span>남자는 여자에게 필요한 물건을 써 주었습니다.</span></li><li class="answer-container"><input type="radio" name="q2" value="4" id="q2a3">
+            <label for="q2a3"><span>남자는 행사 때 쓸 물건을 책상 위에 놓았습니다.</span></li></ul></div><div class="question" id="question3">
+                    <h4>여자는 무엇을 먹습니까?</h4><ul><li class="answer-container"><input type="radio" name="q3" value="1" id="q3a0">
+            <label for="q3a0"><span>냉면</span></li><li class="answer-container"><input type="radio" name="q3" value="2" id="q3a1">
+            <label for="q3a1"><span>비빔냉면</span></li><li class="answer-container"><input type="radio" name="q3" value="3" id="q3a2">
+            <label for="q3a2"><span>찬음식</span></li><li class="answer-container"><input type="radio" name="q3" value="4" id="q3a3">
+            <label for="q3a3"><span>칼국수</span></li></ul></div><div class="question" id="question4">
+                    <h4>여자는 어디에 왔습니까?</h4><ul><li class="answer-container"><input type="radio" name="q4" value="1" id="q4a0">
+            <label for="q4a0"><span>결혼식</span></li><li class="answer-container"><input type="radio" name="q4" value="2" id="q4a1">
+            <label for="q4a1"><span>회갑연</span></li><li class="answer-container"><input type="radio" name="q4" value="3" id="q4a2">
+            <label for="q4a2"><span>졸업식</span></li><li class="answer-container"><input type="radio" name="q4" value="4" id="q4a3">
+            <label for="q4a3"><span>돌잔치</span></li></ul></div><div class="question" id="question5">
+                    <h4>남자는 앞으로 어떻게 하기로 결심했습니까?</h4><ul><li class="answer-container"><input type="radio" name="q5" value="1" id="q5a0">
+            <label for="q5a0"><span>작업장 청소를 한다.</span></li><li class="answer-container"><input type="radio" name="q5" value="2" id="q5a1">
+            <label for="q5a1"><span>작업 시 안전 사고를 예방한다.</span></li><li class="answer-container"><input type="radio" name="q5" value="3" id="q5a2">
+            <label for="q5a2"><span>작업장에서 잃어 버린 물건을 찾아본다.</span></li><li class="answer-container"><input type="radio" name="q5" value="4" id="q5a3">
+            <label for="q5a3"><span>물건을 사용한 후 원래의 위치에 둔다.</span></li></ul></div><button type="button" onclick="checkAnswers()" class="submit-button">Submit</button>
+  <div id="result"></div>
+  </form>
+
+  <script>
+  const questions = [{"question":"들은 내용과 같은 것을 고르십시오.","answers":["여자는 신청서를 썼습니다.","여자는 수영장에서 일합니다.","여자는 아침에 수영을 배울 겁니다.","여자는 회사에서 운동을 하려고 합니다."],"correctAnswer":"3","questionImage":null,"answerImages":[null,null,null,null]},{"question":"들은 내용과 같은 것을 고르십시요.","answers":["여자는 다음 주에 음악회에 갑니다.","남자는 아버지의 선물을 준비했습니다.","남자는 부모님과 음악회에 가고 싶어합니다.","여자는 인터넷으로 공연을 찾아보려고 합니다."],"correctAnswer":"3","questionImage":null,"answerImages":[null,null,null,null]},{"question":"들은 내용과 같은 것을 고르십시오.","answers":["남자는 지금 행사장에 있습니다.","남자는 물건을 사서 사무실로 오면 됩니다.","남자는 여자에게 필요한 물건을 써 주었습니다.","남자는 행사 때 쓸 물건을 책상 위에 놓았습니다."],"correctAnswer":"2","questionImage":null,"answerImages":[null,null,null,null]},{"question":"여자는 무엇을 먹습니까?","answers":["냉면","비빔냉면","찬음식","칼국수"],"correctAnswer":"4","questionImage":null,"answerImages":[null,null,null,null]},{"question":"여자는 어디에 왔습니까?","answers":["결혼식","회갑연","졸업식","돌잔치"],"correctAnswer":"1","questionImage":null,"answerImages":[null,null,null,null]},{"question":"남자는 앞으로 어떻게 하기로 결심했습니까?","answers":["작업장 청소를 한다.","작업 시 안전 사고를 예방한다.","작업장에서 잃어 버린 물건을 찾아본다.","물건을 사용한 후 원래의 위치에 둔다."],"correctAnswer":"4","questionImage":null,"answerImages":[null,null,null,null]}]; // Use the copied array
+
+  function checkAnswers() {
+    let score = 0;
+    const totalPoints = 6;
+
+    questions.forEach((questionData, index) => {
+      const selectedAnswer = document.querySelector(`input[name="q${index}"]:checked`);
+      const questionDiv = document.getElementById(`question${index}`);
+
+      if (selectedAnswer) {
+        const userAnswer = selectedAnswer.value;
+
+        if (userAnswer === questionData.correctAnswer) {
+          score += 1;
+        } else {
+          // If wrong, display the correct answer below the question
+          const correctAnswerText = document.createElement('p');
+          correctAnswerText.style.color = 'red';
+          correctAnswerText.textContent = `Correct answer: ${questionData.answers[questionData.correctAnswer - 1]}`;
+          questionDiv.appendChild(correctAnswerText);
+        }
+      }
+    });
+
+    document.getElementById('result').textContent = `Your score: ${score} / ${totalPoints}`;
+  }
+  </script>
+    <p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+</body>
+</html>
